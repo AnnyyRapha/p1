@@ -1,0 +1,209 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 29, 31);
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 320px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+:root {
+    --r-localnav-height: 52px;
+    --r-localnav-stacked-height: 66px;
+    --r-localnav-gn-height: var(--r-globalnav-height, 44px);
+    --r-localnav-viewport-large-min-width: 1024px;
+    --r-localnav-viewport-large-query: (min-width: 1024px);
+    --r-localnav-viewport-medium-min-width: 834px;
+    --r-localnav-viewport-medium-max-width: 1023px;
+    --r-localnav-viewport-medium-query: (min-width: 834px);
+    --r-localnav-viewport-small-min-width: 320px;
+    --r-localnav-viewport-small-max-width: 833px;
+    --r-localnav-viewport-small-query: (min-width: 320px);
+}
+:root {
+    --r-globalnav-background-opened: #fbfbfd;
+    --r-globalnav-background-opened-dark: #161617;
+}
+html {
+    --global-nav-ad-bar-height: 0px;
+    --global-nav-collective-height: 0px;
+}
+html {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 106.25%;
+    quotes: "“" "”";
+    --sk-link-disabled-opacity: .42;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    --r-globalnav-height: 44px;
+    --r-globalmessage-segment-height: 0px;
+    --r-globalnav-segmentbar-height: 0px;
+}
+
+/*Nav*/
+header nav{
+    background-color: #000000;
+    height: 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#navbar a {
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+#navbar .logo{
+    color: #ffffff;
+    
+}
+
+#navbar a:hover {
+    color: #ffffff;
+}
+
+#bottom-header {
+    font-size: .8rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+#bottom-header h3 {
+    font-size: 1.2rem;
+}
+
+#bottom-header a {
+    color: #1f1e1e;
+}
+
+#bottom-header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-header a {
+    margin: 0 0.5rem;
+}
+
+#bottom-header-inner .btn, .btn {
+    background-color: #0071e3;
+    border-radius: 10rem;
+    padding: 0.4rem 1rem;
+    color: #fff;
+}
+
+/*conteúdo*/
+
+#ribbon {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f7;
+    color: #1d1d1d;
+    font-size: 0.8rem;
+}
+
+#main-content {
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-content #title {
+    font-size: 20px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0rem;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+#main-content #subtitle {
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#main-content #price {
+    font-size: 1.3rem;
+    color: #1b1b1b;
+    margin: 2rem;
+}
+
+#main-content .btn {
+    font-size: 1.1rem;
+    padding: 1rem;
+    align-self: center;
+}
+
+#main-content #product-image {
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: .5s;
+}
+
+#main-content #product-image{
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: .5s;
+}
+
+#main-content #product-image.changing {
+    opacity: 0.5;
+}
+
+#image-picker {
+    margin-bottom: 500px;
+}
+
