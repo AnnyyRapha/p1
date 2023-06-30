@@ -1,9 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -19,67 +20,22 @@ body {
     line-height: 1.47059;
     font-weight: 400;
     letter-spacing: -0.022em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(255, 255, 255);
     color: rgb(29, 29, 31);
     font-style: normal;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-}
-body {
+.body {
     min-width: 320px;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-}
-body {
+.body {
     display: block;
     margin: 8px;
 }
-:root {
-    --r-localnav-height: 52px;
-    --r-localnav-stacked-height: 66px;
-    --r-localnav-gn-height: var(--r-globalnav-height, 44px);
-    --r-localnav-viewport-large-min-width: 1024px;
-    --r-localnav-viewport-large-query: (min-width: 1024px);
-    --r-localnav-viewport-medium-min-width: 834px;
-    --r-localnav-viewport-medium-max-width: 1023px;
-    --r-localnav-viewport-medium-query: (min-width: 834px);
-    --r-localnav-viewport-small-min-width: 320px;
-    --r-localnav-viewport-small-max-width: 833px;
-    --r-localnav-viewport-small-query: (min-width: 320px);
-}
-:root {
-    --r-globalnav-background-opened: #fbfbfd;
-    --r-globalnav-background-opened-dark: #161617;
-}
-html {
-    --global-nav-ad-bar-height: 0px;
-    --global-nav-collective-height: 0px;
-}
-html {
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 106.25%;
-    quotes: "“" "”";
-    --sk-link-disabled-opacity: .42;
-}
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-html {
-    --r-globalnav-height: 44px;
-    --r-globalmessage-segment-height: 0px;
-    --r-globalnav-segmentbar-height: 0px;
-}
 
-/*Nav*/
+ /*Nav*/
 header nav{
-    background-color: #000000;
+    background-color: #f1caca;
     height: 30px;
 }
 
@@ -93,13 +49,13 @@ header nav{
     margin: 0 auto;
 }
 #navbar a {
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
     transition: 0.4s;
 }
 
 #navbar .logo{
-    color: #ffffff;
+    color: #050505;
     
 }
 
