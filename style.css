@@ -1,10 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
 ul{
@@ -15,22 +22,16 @@ a{
     text-decoration: none;
 }
 
-body {
-    font-size: 17px;
-    line-height: 1.47059;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgb(29, 29, 31);
-    font-style: normal;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
-.body {
-    min-width: 320px;
-}
-.body {
-    display: block;
-    margin: 8px;
+body{
+    background: url("img/heart.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
  /*Nav*/
@@ -39,7 +40,7 @@ header nav{
     height: 30px;
 }
 
-#navbar {
+#navMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,18 +49,18 @@ header nav{
     max-width: 1000px;
     margin: 0 auto;
 }
-#navbar a {
+#navMenu a {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     transition: 0.4s;
 }
 
-#navbar .logo{
+#navMenu .logo{
     color: #050505;
     
 }
 
-#navbar a:hover {
+#navMenu a:hover {
     color: #ffffff;
 }
 
@@ -90,21 +91,13 @@ header nav{
 }
 
 #bottom-header-inner .btn, .btn {
-    background-color: #0071e3;
+    background-color: #383535;
     border-radius: 10rem;
     padding: 0.4rem 1rem;
     color: #fff;
 }
 
 /*conteúdo*/
-
-#ribbon {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f5f5f7;
-    color: #1d1d1d;
-    font-size: 0.8rem;
-}
 
 #main-content {
     text-align: center;
@@ -115,30 +108,33 @@ header nav{
 }
 
 #main-content #title {
-    font-size: 20px;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin: 0rem;
-    font-size: 1rem;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;
+    font-size: 3rem;
     font-style: normal;
+    align-items: center;
 }
 
 #main-content #subtitle {
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin: 2rem;
-    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0rem;
+    font-size: 2rem;
     font-weight: bold;
+    align-items: center;
 }
 
-#main-content #price {
+#main-content #introduction {
     font-size: 1.3rem;
     color: #1b1b1b;
     margin: 2rem;
+    align-items: flex-start;
 }
 
 #main-content .btn {
     font-size: 1.1rem;
     padding: 1rem;
-    align-self: center;
+    align-self: flex-start;
 }
 
 #main-content #product-image {
@@ -163,3 +159,42 @@ header nav{
     margin-bottom: 500px;
 }
 
+@media only screen and (max-width: 786px){
+    .nav-button {
+        display: none;
+    }
+    .nav-menu.responsive {
+        top: 100px;
+    }
+     .nav-menu {
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+ 
+     .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+     .nav-menu-btn{
+        display: block;
+    }
+     .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}

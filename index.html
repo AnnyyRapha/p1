@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>Flowers</title>
+    <title>Flowers.</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul id="navbar">
+            <ul id="navMenu">
                 <li id="logo">
                     <a href="#"><img src="img/bxs-florist.svg" alt="Logo"></a>
                 </li>
@@ -25,33 +26,65 @@
                     <a href="#">Produtos</a>
                 </li>
                 <li>
-                    <a href="#">Review</a>
-                </li>
-                <li>
                     <a href="#">Contatos</a>
                 </li>
                 <li>
                     <a href="#">Suporte</a>
                 </li>
             </ul>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu"></i>
+                <box-icon name='menu' rotate='180' onclick="myMenufunction()"></box-icon>
+              </div>
         </nav>
-        <div class="icons">
-            <a href="#"><img src="img/icon2.html" alt=""></a>
-        </div>
         <br>
     </header>
-    <div id="ribbon">
-        <p>Pague seu novo iPhone em até 12 parcelas ou economize 10% nos pagamentos à vista. <a href="#">Saiba mais > </a></p>
-    </div>
     <br>
     <main id="main-content">
-        <h3 id="title">iPhone 14</h3>
-        <h1 id="subtitle">Maravilindo.</h1>
-    <p id="price">A partir de R$ 633,25/mês ou R$ 7.599*</p>
-    <a href="#" class="btn">Comprar</a>
-    <br>
-    <br>
-    <img src="img/flowers4.jpg" alt="Flower" id="product-images">
+        <h3 id="title">Flowers.</h3>
+        <h1 id="subtitle">Flores Lindas & Cheirosas</h1>
+        <p id="introduction">SEJA BEM_VINDO(A)!</p>
+        <p id="paragraph"> Aqui você encontrara flores de todo tipo para sua amada(o) ou até mesmo para você! <a href="#">Saiba mais > </a></p>
+    <a href="#" class="btn"></a>
     </main>
+    <script>
+        function myMenufunction() {
+          var i = document.getElementById("navMenu");
+      
+          if(i.className === "nav-menu") {
+            i.className += " responsive";
+          } else {
+            i.className = "nav-menu"
+          }
+        }
+      
+      </script>
+      
+      <script>
+      
+      var a = document.getElementById("loginBtn")
+      var b = document.getElementById("registerBtn")
+      var x = document.getElementById("login")
+      var y = document.getElementById("register")
+      
+      function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+      }
+      
+      function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+      }
+      
+      </script>
 </body>
 </html>
